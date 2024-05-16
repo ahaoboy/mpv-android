@@ -11,8 +11,6 @@ else
 	exit 255
 fi
 
-[ -f configure ] || ./autogen.sh
-
 make -j$cores
 make DESTDIR="$prefix_dir" install
 
