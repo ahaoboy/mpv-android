@@ -10,6 +10,7 @@ v_sdk_platform=34
 v_sdk_build_tools=34.0.0
 
 v_lua=5.2.4
+v_mujs=1.3.4
 v_unibreak=6.1
 v_harfbuzz=8.4.0
 v_fribidi=1.0.13
@@ -30,7 +31,7 @@ dep_unibreak=()
 dep_libass=(freetype2 fribidi harfbuzz unibreak)
 dep_lua=()
 dep_libplacebo=()
-dep_mpv=(ffmpeg libass lua libplacebo)
+dep_mpv=(ffmpeg libass lua libplacebo mujs)
 dep_mpv_android=(mpv)
 
 
@@ -40,4 +41,4 @@ dep_mpv_android=(mpv)
 v_travis_ffmpeg=n6.1.1
 
 # filename used to uniquely identify a build prefix
-travis_tarball="prefix-ndk-${v_ndk}-lua-${v_lua}-unibreak-${v_unibreak}-harfbuzz-${v_harfbuzz}-fribidi-${v_fribidi}-freetype-${v_freetype}-mbedtls-${v_mbedtls}-ffmpeg-${v_travis_ffmpeg}.tgz"
+travis_tarball="prefix-ndk-${v_ndk}-lua-${v_lua}-mujs-${v_mujs}-unibreak-${v_unibreak}-harfbuzz-${v_harfbuzz}-fribidi-${v_fribidi}-freetype-${v_freetype}-mbedtls-${v_mbedtls}-ffmpeg-${v_travis_ffmpeg}.tgz"
