@@ -11,8 +11,8 @@ else
 	exit 255
 fi
 
-make -j$cores
-make DESTDIR="$prefix_dir" install
+make HAVE_READLINE=no -j$cores
+make HAVE_READLINE=no DESTDIR="$prefix_dir" install
 
 # make pc only generates a partial pkg-config file because ????
 mkdir -p $prefix_dir/lib/pkgconfig
